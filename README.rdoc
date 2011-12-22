@@ -35,7 +35,8 @@ Allows you to do
 6. Go for it!
     $ rake pgbackup:seed
 
-== ToDo
+== To Do
+  - add rails 2 support
   - check to see that heroku gem is installed (with nice warning)
   - check to see that production and staging remotes are set (with nice warning)
   - nice output (downloading, saving, restoring)
