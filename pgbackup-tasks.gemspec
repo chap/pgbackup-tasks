@@ -5,6 +5,6 @@ Gem::Specification.new do |s|
   s.summary     = "Some nice rake tasks for Heroku's pgbackups"
   s.authors     = ["Chap Ambrose"]
   s.email       = 'chapambrose@gmail.com'
-  s.files       = ["lib/tasks.rb"]
+  s.files       = ["lib/pgbackup-tasks.rb"]
   s.homepage    = 'http://github.com/chap/pgbackup-tasks'
 end
