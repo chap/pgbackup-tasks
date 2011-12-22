@@ -6,4 +6,5 @@ Gem::Specification.new do |s|
   s.authors     = ["Chap Ambrose"]
   s.email       = 'chapambrose@gmail.com'
   s.files       = ["lib/tasks.rb"]
+  s.homepage    = 'http://github.com/chap/pgbackup-tasks'
 end
