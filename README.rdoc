@@ -1,4 +1,4 @@
-== Some nice rake tasks for Heroku's pgbackups 
+== Some nice rake tasks for Heroku's pgbackups
 
 Allows you to do
     $ rake backup:seed       # capture pgbackup from production and load into development
@@ -6,17 +6,21 @@ Allows you to do
 
 == Installation
 
-Add pgbackup-tasks to gemfile
+1. Add heroku and pgbackup-tasks to gemfile
+    gem 'heroku'
     gem 'pgbackup-tasks'
 
-Make sure you're using postgres for development.
+2. Bundle install
+    $ bundle
+
+3. Make sure you're using postgres for development.
     # config/database.yml
     development:
       adapter: postgresql
       database: myapp_development
       ...
 
-Make your heroku app's remote names production and staging (as recommended in this {heroku help article}[http://devcenter.heroku.com/articles/multiple-environments])
+4. Make your heroku app's remote names production and staging (as recommended in this {heroku help article}[http://devcenter.heroku.com/articles/multiple-environments])
     # git/config
     [remote "production"]
       url = git@heroku.com:myapp.git
@@ -25,5 +29,14 @@ Make your heroku app's remote names production and staging (as recommended in th
       url = git@heroku.com:myapp-staging.git
     
 
-Make sure you have the pgbackup add-on installed for your heroku apps.
+5. Make sure you have the pgbackup add-on installed for your heroku apps.
     $ heroku addons:add pgbackups
+
+6. Go for it!
+    $ rake backup:seed
+
+== ToDo
+  - check to see that heroku gem is installed (with nice warning)
+  - check to see that production and staging remotes are set (with nice warning)
+  - nice output (downloading, saving, restoring)
+  - hide "private" rake tasks

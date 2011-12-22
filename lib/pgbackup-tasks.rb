@@ -1,0 +1,1 @@
+require 'pgbackup-tasks/railtie'
