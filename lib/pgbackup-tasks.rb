@@ -1,1 +1,1 @@
-require 'pgbackup-tasks/railtie'
+require 'pgbackup-tasks/railtie' if defined?(Rails::Railtie)
