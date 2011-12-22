@@ -1,1 +1,1 @@
-require 'pgbackup-tasks/railtie' if defined?(Rails::Railtie)
+load 'tasks/pgbackup.rake' if defined?(Rake)

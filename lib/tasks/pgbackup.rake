@@ -1,5 +1,3 @@
-require 'pgbackup-tasks'
-
 namespace :pgbackup do
   desc 'capture pgbackup from production'
   task :capture  => :environment do
