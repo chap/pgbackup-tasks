@@ -40,3 +40,4 @@ Allows you to do
   - check to see that production and staging remotes are set (with nice warning)
   - nice output (downloading, saving, restoring)
   - hide "private" rake tasks
+  - silence pg_restore output
