@@ -1,8 +1,8 @@
 == Some nice rake tasks for Heroku's pgbackups
 
 Allows you to do
-    $ rake backup:seed       # capture pgbackup from production and load into development
-    $ rake backup:to_staging # capture pgbackup from production and load into staging
+    $ rake pgbackup:seed       # capture pgbackup from production and load into development
+    $ rake pgbackup:to_staging # capture pgbackup from production and load into staging
 
 == Installation
 
@@ -33,7 +33,7 @@ Allows you to do
     $ heroku addons:add pgbackups
 
 6. Go for it!
-    $ rake backup:seed
+    $ rake pgbackup:seed
 
 == ToDo
   - check to see that heroku gem is installed (with nice warning)
