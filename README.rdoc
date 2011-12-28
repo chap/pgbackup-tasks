@@ -6,8 +6,7 @@ Allows you to do
 
 == Installation
 
-1. Add heroku and pgbackup-tasks to gemfile
-    gem 'heroku'
+1. Add pgbackup-tasks to gemfile
     gem 'pgbackup-tasks'
 
 2. Bundle install
