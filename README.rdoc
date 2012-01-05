@@ -32,7 +32,7 @@ Allows you to do
     $ heroku addons:add pgbackups
 
 6. Go for it!
-    $ rake pgbackup:seed
+    $ bundle exec rake pgbackup:seed
 
 == To Do
   - add rails 2 support
