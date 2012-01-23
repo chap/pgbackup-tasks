@@ -1,4 +1,4 @@
-== Some nice rake tasks for Heroku's pgbackups
+== Some nice rake tasks for Heroku's {pgbackups}[http://devcenter.heroku.com/articles/pgbackups]
 
 Allows you to do
     $ rake pgbackup:seed       # capture pgbackup from production and load into development
@@ -29,7 +29,8 @@ Allows you to do
     
 
 5. Make sure you have the pgbackup add-on installed for your heroku apps.
-    $ heroku addons:add pgbackups
+    $ heroku addons:add pgbackups --remote production
+    $ heroku addons:add pgbackups --remote staging
 
 6. Go for it!
     $ bundle exec rake pgbackup:seed
